@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "podcast_app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "podcast_app.py"
+        }
+    ]
+} 
